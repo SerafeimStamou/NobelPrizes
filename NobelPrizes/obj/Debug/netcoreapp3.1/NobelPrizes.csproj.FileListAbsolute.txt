@@ -14,6 +14,6 @@ C:\NobelPrizes\NobelPrizes\obj\Debug\netcoreapp3.1\NobelPrizes.genruntimeconfig.
 C:\NobelPrizes\NobelPrizes\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
 C:\NobelPrizes\NobelPrizes\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\NobelPrizes\NobelPrizes\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
-C:\NobelPrizes\NobelPrizes\bin\Debug\netcoreapp3.1\Api.dll
-C:\NobelPrizes\NobelPrizes\bin\Debug\netcoreapp3.1\Api.pdb
 C:\NobelPrizes\NobelPrizes\obj\Debug\netcoreapp3.1\NobelPrizes.csproj.CopyComplete
+C:\NobelPrizes\NobelPrizes\bin\Debug\netcoreapp3.1\ApiLibrary.dll
+C:\NobelPrizes\NobelPrizes\bin\Debug\netcoreapp3.1\ApiLibrary.pdb

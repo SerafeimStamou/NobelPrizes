@@ -15,9 +15,15 @@ namespace Api
             {
                 while (run)
                 {
-                    Console.WriteLine("Press 1 to see all the winners and prizes,press 2 to search by winner's name or press 3 to search by nobel's category");
+                    Console.WriteLine("Press 1 to see all the winners and prizes,press 2 to search by winner's name or press 3 to search by nobel's category.");
+                    Console.WriteLine("First letter must be uppercase(for example Albert Einstein,Physics etc)");
+                    Console.WriteLine();
                     Console.WriteLine("Press 0 to exit program");
+                    Console.WriteLine("Press c to clear console");
                     string choice = Console.ReadLine();
+
+                    if (choice.Equals("c"))
+                        Console.Clear();
 
                     if (choice.Equals("0"))
                         run = false;
@@ -63,19 +69,24 @@ namespace Api
 
             var result = nobels.Laureates.Find(n => n.KnownName.En.Equals(name));
 
-            Console.WriteLine();
-            Console.WriteLine("Name: {0}", result.KnownName.En);
-            Console.WriteLine("Date of Birth: {0}", result.BirthInfo.BirthDate);
-            Console.WriteLine("Gender: {0}", result.Gender);
-            Console.WriteLine("Birth Place: {0},{1}", result.BirthInfo.PlaceInfo.city.CityName, result.BirthInfo.PlaceInfo.country.CountryName);
-            Console.WriteLine();
-            Console.WriteLine("Information about prize:");
-            Console.WriteLine("Category: {0}", result.award[0].Category.CategoryName);
-            Console.WriteLine("Category full name: {0}", result.award[0].CategoryFullName.FullName);
-            Console.WriteLine("Motivation: {0}", result.award[0].MotivationText.PrizeMotivation);
-            Console.WriteLine("Year: {0}", result.award[0].AwardYear);
-            Console.WriteLine("Full Date: {0}", result.award[0].DateAwarded);
-            Console.WriteLine("Status: {0}", result.award[0].PrizeStatus);
+            if (result != null)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Name: {0}", result.KnownName.En);
+                Console.WriteLine("Date of Birth: {0}", result.BirthInfo.BirthDate);
+                Console.WriteLine("Gender: {0}", result.Gender);
+                Console.WriteLine("Birth Place: {0},{1}", result.BirthInfo.PlaceInfo.city.CityName, result.BirthInfo.PlaceInfo.country.CountryName);
+                Console.WriteLine();
+                Console.WriteLine("Information about prize:");
+                Console.WriteLine("Category: {0}", result.award[0].Category.CategoryName);
+                Console.WriteLine("Category full name: {0}", result.award[0].CategoryFullName.FullName);
+                Console.WriteLine("Motivation: {0}", result.award[0].MotivationText.PrizeMotivation);
+                Console.WriteLine("Year: {0}", result.award[0].AwardYear);
+                Console.WriteLine("Full Date: {0}", result.award[0].DateAwarded);
+                Console.WriteLine("Status: {0}", result.award[0].PrizeStatus);
+            }
+            else
+                Console.WriteLine("There is not a winner with this name");
         }
 
         public static void GetByCategory(NobelModel nobels)
@@ -84,6 +95,9 @@ namespace Api
             string category = Console.ReadLine();
 
             var result = nobels.Laureates.Where(n => n.award[0].Category.CategoryName.Equals(category)).ToList();
+            
+            if(result.Count == 0)
+                Console.WriteLine("Nothing found");
 
             foreach (var nobel in result)
             {

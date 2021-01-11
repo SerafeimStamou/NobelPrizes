@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NobelPrizes", "NobelPrizes\NobelPrizes.csproj", "{586BE3D1-714F-403A-BEAA-F170C23E208A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NobelPrizes", "NobelPrizes\NobelPrizes.csproj", "{586BE3D1-714F-403A-BEAA-F170C23E208A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{551136E9-979C-40F6-866C-AC3047987D1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLibrary", "Api\ApiLibrary.csproj", "{551136E9-979C-40F6-866C-AC3047987D1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -3482,9 +3482,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\NobelPrizes\\Api\\Api.csproj",
-      "projectName": "Api",
-      "projectPath": "C:\\NobelPrizes\\Api\\Api.csproj",
+      "projectUniqueName": "C:\\NobelPrizes\\Api\\ApiLibrary.csproj",
+      "projectName": "ApiLibrary",
+      "projectPath": "C:\\NobelPrizes\\Api\\ApiLibrary.csproj",
       "packagesPath": "C:\\Users\\Σεραφείμ\\.nuget\\packages\\",
       "outputPath": "C:\\NobelPrizes\\Api\\obj\\",
       "projectStyle": "PackageReference",

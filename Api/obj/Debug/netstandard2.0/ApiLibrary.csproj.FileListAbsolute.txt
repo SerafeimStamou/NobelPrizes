@@ -1,0 +1,9 @@
+C:\NobelPrizes\Api\bin\Debug\netstandard2.0\ApiLibrary.deps.json
+C:\NobelPrizes\Api\bin\Debug\netstandard2.0\ApiLibrary.dll
+C:\NobelPrizes\Api\bin\Debug\netstandard2.0\ApiLibrary.pdb
+C:\NobelPrizes\Api\obj\Debug\netstandard2.0\ApiLibrary.csprojAssemblyReference.cache
+C:\NobelPrizes\Api\obj\Debug\netstandard2.0\ApiLibrary.AssemblyInfoInputs.cache
+C:\NobelPrizes\Api\obj\Debug\netstandard2.0\ApiLibrary.AssemblyInfo.cs
+C:\NobelPrizes\Api\obj\Debug\netstandard2.0\ApiLibrary.csproj.CoreCompileInputs.cache
+C:\NobelPrizes\Api\obj\Debug\netstandard2.0\ApiLibrary.dll
+C:\NobelPrizes\Api\obj\Debug\netstandard2.0\ApiLibrary.pdb

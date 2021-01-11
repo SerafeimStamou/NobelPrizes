@@ -731,17 +731,17 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
-      "Api/1.0.0": {
+      "ApiLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.7"
         },
         "compile": {
-          "bin/placeholder/Api.dll": {}
+          "bin/placeholder/ApiLibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Api.dll": {}
+          "bin/placeholder/ApiLibrary.dll": {}
         }
       }
     }
@@ -3333,15 +3333,15 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
-    "Api/1.0.0": {
+    "ApiLibrary/1.0.0": {
       "type": "project",
-      "path": "../Api/Api.csproj",
-      "msbuildProject": "../Api/Api.csproj"
+      "path": "../Api/ApiLibrary.csproj",
+      "msbuildProject": "../Api/ApiLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Api >= 1.0.0"
+      "ApiLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3371,8 +3371,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\NobelPrizes\\Api\\Api.csproj": {
-              "projectPath": "C:\\NobelPrizes\\Api\\Api.csproj"
+            "C:\\NobelPrizes\\Api\\ApiLibrary.csproj": {
+              "projectPath": "C:\\NobelPrizes\\Api\\ApiLibrary.csproj"
             }
           }
         }
